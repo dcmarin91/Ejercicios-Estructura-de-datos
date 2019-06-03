@@ -52,3 +52,27 @@ myLL.add(50);
 myLL.reverse();
 console.log(myLL);
 ```
+
+## Ejericio 2 Metodo Middle
+
+```
+LinkedList.prototype.mitad = function() {
+  let cont = 0;
+  let nodo = this.head;
+  let middle = Math.floor(this.size/2-1);
+  while (nodo) {
+    if (cont === middle) {
+      if(this.size%2===0){
+        //Aca deberia entrar si es par
+        return nodo;
+      }
+      //Aca deberia entrar si es impar
+      return nodo.next
+    }
+    cont++;
+    nodo = nodo.next;
+  }
+  return console.log("El arreglo es de tamano 1")
+}
+```
+## Ejercicio 3 Metodo isBalanced
