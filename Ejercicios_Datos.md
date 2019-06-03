@@ -63,10 +63,8 @@ LinkedList.prototype.mitad = function() {
   while (nodo) {
     if (cont === middle) {
       if(this.size%2===0){
-        //Aca deberia entrar si es par
         return nodo;
       }
-      //Aca deberia entrar si es impar
       return nodo.next
     }
     cont++;
